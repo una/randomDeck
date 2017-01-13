@@ -10,8 +10,10 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "WNdb": "^3.1.2",
     "emojilib": "^2.0.3",
     "fs": "0.0.1-security",
+    "lapack": "^0.1.0",
     "sentencer": "^0.1.5",
     "vue": "^2.1.0"
   },

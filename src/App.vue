@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <heading></heading>
+    <heading v-bind:slideNum=slideNum></heading>
     <randomizer></randomizer>
   </div>
 </template>
@@ -11,6 +11,26 @@ import Randomizer from './components/Randomizer'
 
 export default {
   name: 'app',
+
+  created: function () {
+    document.addEventListener('keydown', this.slideCount)
+  },
+
+  methods: {
+    slideCount: function (e) {
+      if (e.keyCode === 32) {
+        console.log(this.slideNum);
+        this.slideNum++;
+      }
+    }
+  },
+
+  data () {
+    return {
+      slideNum: 1
+    }
+  },
+
   components: {
     Heading,
     Randomizer

@@ -1,6 +1,6 @@
-# randomhack
+# randomDeck
 
-> Idea generator for RandomHack weekends
+> Randomizer for Battle Decks
 
 ## Build Setup
 

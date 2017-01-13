@@ -1,13 +1,18 @@
 <template>
-  <h1>{{ title }}</h1>
+  <header>
+    <h1>{{ title }}</h1>
+    <p>{{ slideNum }}/10</p>
+  </header>
 </template>
 
 <script>
 export default {
   name: 'heading',
+  props: ['slideNum'],
+
   data () {
     return {
-      title: 'RanomHack Randomizer!'
+      title: 'Topic Here'
     }
   }
 }
